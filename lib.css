@@ -1,0 +1,45 @@
+body{
+    padding-top: 50px;
+   text-align: center;
+   background-color: rgb(231, 227, 227);
+}
+
+#library{
+    margin-top: 40px;
+    display: inline-block;
+}
+
+#library .book{
+    border: solid lightslategray 5px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 2px;
+    padding: 15px 10px 0px 10px;
+    position: relative;
+    background-color: rgb(255, 224, 167);
+    font-weight: bold;
+}
+
+#library .book.read{
+     background-color: lightgreen;
+}
+
+#newBookEntry{
+    background-color: whitesmoke;
+    width: 540px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+} 
+
+
+.cardBtn{
+    font-size: 9pt;
+    background: none;
+    border: none;
+   float: right;
+}
+
+
+
+
