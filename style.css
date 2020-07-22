@@ -1,0 +1,104 @@
+body{
+    padding-top: 50px;
+   text-align: center;
+   background-color: rgb(231, 227, 227);
+}
+
+#library{
+    margin-top: 40px;
+    display: inline-block;
+}
+
+#library .book{
+    border: solid lightslategray 5px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    padding: 15px 10px 0px 10px;
+    background-color: rgb(255, 224, 167);
+    font-weight: bold;
+}
+
+#library .book.read{
+     background-color: lightgreen;
+}
+
+.cardBtn{
+    font-size: 9pt;
+    font-weight: bold;
+    background: none;
+    border: none;
+    float: right;
+}
+
+button{
+    font-size: 14px;
+    background-color: #84b8f0;
+    padding: 3px; 
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    padding-top: 150px;
+    margin: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: rgb(231, 227, 227);
+    border: solid lightslategray 5px;
+    position: absolute;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+ 
+}
+
+label{
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 40%;
+    text-align: left;
+}
+
+input{
+    font-size: 15px;
+    width: 55%;
+    border: 2px solid black;
+}
+
+.block{
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-submit-button{
+    margin: 0px 10px 10px 0px;
+    float: center;
+}
+
+.closeModal {
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+

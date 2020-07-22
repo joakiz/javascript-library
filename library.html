@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- This is simple book library using JS based on the odin project-->
+<!-- This is simple book library using JS using localstorage-->
 
 <head>
   <meta charset="utf-8">
@@ -9,31 +9,50 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="lib.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div>
-    <h1>Book library</h1>
+    <h1>Book Library</h1>
 
-    <input id="newBook" type="button" value="Add book">
-  </div>
-  
-    <div id="library"></div>
-
-  
-  <div id="formCover" hidden="true">
-    <form id="newBookEntry">
-      <input type="text" placeholder="Title">
-      <input type="text" placeholder="Author">
-      <input type="number" placeholder="Pages">
-      <input id="submit" type="button" value="submit">
-      <input id="cancel" type="button" value="Cancel">
-    </form>
-  </div>
+    <button id="newBook">Add new book</button>
   </div>
 
-  <script src="lib.js"></script>
+  <div id="library">
+
+  </div>
+
+  <div id="bookModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="closeModal">X</span><br><br>
+      <form class="modal-form" name="modal-form">
+        <div class="block">
+          <label>Author:</label>
+          <input class="form-author-name" type="text" required>
+        </div>
+        <div class="block">
+          <label>Title:</label>
+          <input class="form-title" type="text">
+        </div>
+        <div class="block">
+          <label>Pages:</label>
+          <input class="form-pages" type="number" required>
+        </div>
+        <div class="block" id="checkRead">
+
+        </div><br>
+        <div class="modal-footer">
+          <label>Read?</label>
+          <input class="form-read" type="checkbox"><br><br>
+          <button class="modal-submit-button" type="button">Add book</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
